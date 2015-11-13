@@ -1,0 +1,29 @@
+application: PROJECT_ID
+version: API_VERSION
+runtime: php55
+api_version: 1
+
+threadsafe: true
+handlers:
+# url rewrites. create your matchers according your defined rewrite rules
+- url: /css
+  static_dir: webroot/css
+- url: /fonts
+  static_dir: webroot/fonts
+- url: /js
+  static_dir: webroot/js
+- url: /img
+  static_dir: webroot/img
+- url: /favicon.ico
+  static_files: webroot/favicon.ico
+  upload: webroot/favicon.ico
+- url : /.*
+  script: webroot/index.php
+
+# Sample debug files setup
+# - url: /debug_kit/css
+#   static_dir: app/Plugin/DebugKit/webroot/css
+# - url: /debug_kit/js
+#   static_dir: app/Plugin/DebugKit/webroot/js
+# - url: /debug_kit/img
+#   static_dir: app/Plugin/DebugKit/webroot/img

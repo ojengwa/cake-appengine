@@ -1,0 +1,6 @@
+# Cronjobs on GAE
+cron:
+- description: Check Message Statuses
+  url: /GatewayService/checkForDelivery
+  timezone: Africa/Lagos #Specify your timezone
+  schedule: every 1 mins
