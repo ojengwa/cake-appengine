@@ -1,5 +1,5 @@
-application: PROJECT_ID
-version: API_VERSION
+application: apibasis
+version: beta1
 runtime: php55
 api_version: 1
 
